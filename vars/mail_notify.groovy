@@ -1,4 +1,4 @@
-def notifyBuild(String buildStatus = 'STARTED') 
+def notifyBuild(String buildStatus = 'STARTED',String mailid) 
 {
   buildStatus =  buildStatus ?: 'SUCCESSFUL'
 
@@ -6,7 +6,7 @@ def notifyBuild(String buildStatus = 'STARTED')
 
     if (buildStatus == 'SUCCESSFUL'){
             emailext (
-            to: 'sudhakarankavitha21@gmail.com',
+            to: mailid,
             subject: 'Build Success',
             body: """Job Status: Success
             Project: Test
@@ -18,7 +18,7 @@ def notifyBuild(String buildStatus = 'STARTED')
     
     else {
             emailext (
-            to: 'sudhakarankavitha21@gmail.com',
+            to: mailid,
             subject: 'Build Failed',
             body: """Job Status: Failed
             Project: Test
