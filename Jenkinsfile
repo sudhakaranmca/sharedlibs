@@ -45,7 +45,7 @@ pipeline {
                          script
                          {
                              mail_notify("murusudha@gmail.com")
-                             scripts=load "./sharedlibs/var/test.groovy"
+                             scripts=load "./sharedlibs/var/mail_notify.groovy"
                          
               }
           }
