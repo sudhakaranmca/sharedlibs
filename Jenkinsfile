@@ -1,4 +1,4 @@
-@Library("shared_library_welcome@main") _pipeline {
+@Library("shared_library_welcome") _pipeline {
     agent any
     stages {
           stage("checkout")
