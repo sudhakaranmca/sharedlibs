@@ -1,6 +1,6 @@
-def call()
+def call(mailid)
 {
-  
+  notifyBuild(mailid)
 }
 
 def notifyBuild(String buildStatus = 'STARTED',String mailid) 
