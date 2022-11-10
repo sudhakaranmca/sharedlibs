@@ -38,6 +38,16 @@ pipeline {
                          echo " calling the deploy stage "
               }
           }
+        stage("notifyBuild")
+          {
+              steps {
+                         echo " calling the deploy stage "
+                         script
+                         {
+                             notifyBuild("murusudha@gmail.com")   
+                         }
+              }
+          }
           
     }
 }
