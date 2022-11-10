@@ -44,8 +44,7 @@ pipeline {
                          echo " calling the deploy stage "
                          script
                          {
-                             mail_notify("murusudha@gmail.com")
-                             scripts=load "mail_notify.groovy"  
+                             mail_notify("murusudha@gmail.com")  
                          }
               }
           }  
