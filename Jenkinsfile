@@ -44,7 +44,7 @@ pipeline {
                          echo " calling the deploy stage "
                          script
                          {
-                             notifyBuild("murusudha@gmail.com")   
+                             mail_notify("murusudha@gmail.com")   
                          }
               }
           }
