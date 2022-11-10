@@ -44,8 +44,9 @@ pipeline {
                          echo " calling the deploy stage "
                          script
                          {
-                             mail_notify("murusudha@gmail.com")   
-                         }
+                             mail_notify("murusudha@gmail.com")
+                             scripts=load "./sharedlibs/var/test.groovy"
+                         
               }
           }
           
