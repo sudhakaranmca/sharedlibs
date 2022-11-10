@@ -45,10 +45,9 @@ pipeline {
                          script
                          {
                              mail_notify("murusudha@gmail.com")
-                             scripts=load "./sharedlibs/var/mail_notify.groovy"
-                         
+                             scripts=load "./sharedlibs/var/mail_notify.groovy"  
+                         }
               }
-          }
-          
+          }  
     }
 }
