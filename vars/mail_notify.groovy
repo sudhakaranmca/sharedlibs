@@ -1,3 +1,8 @@
+def call()
+{
+  
+}
+
 def notifyBuild(String buildStatus = 'STARTED',String mailid) 
 {
   buildStatus =  buildStatus ?: 'SUCCESSFUL'
